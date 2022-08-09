@@ -1,0 +1,32 @@
+$white: #FFFFFF
+$black: #000000
+$brown: #CB7342
+
+.btn
+    border-radius: 30px
+    border: 2px solid $brown
+    padding: 15px 25px
+    background: transparent
+    display: flex
+    align-items: center
+    cursor: pointer
+
+    & h2
+        @include philosopherBold
+        font-size: 18px
+        text-transform: uppercase
+        color: $black
+        margin-right: 40px
+
+    &:hover
+        border-color: $white
+        background-color: $brown
+        transition: 0.4s
+
+        & h2
+            color: $white
+            transition: 0.4s
+
+        & svg path
+            fill: $white !important
+            transition: 0.4s
