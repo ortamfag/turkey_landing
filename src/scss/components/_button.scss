@@ -1,0 +1,41 @@
+.c-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $brown;
+    border-radius: 30px;
+    width: 285px;
+    height: 50px;
+    background-color: inherit;
+    transition: 0.3s;
+    cursor: pointer;
+
+    p {
+        margin-right: 41px;
+        font-family: "Philosopher", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        background-color: $brown;
+        transition: 0.3s;
+    }
+
+    &--white {
+        p {
+            color: $white;
+        }
+    }
+
+    &--black {
+        p {
+            color: $black;
+        }
+    }
+
+    &--disabled {
+        background-color: $grey !important;
+    }
+}

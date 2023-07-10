@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $container-width;
+}
+
+.centered {
+    text-align: center;
+}

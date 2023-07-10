@@ -1,0 +1,54 @@
+.header {
+    position: relative;
+    padding-top: 33px;
+    height: 100vh;
+    max-height: 100vh;
+    background: url("../img/bg-header.webp") no-repeat;
+    background-size: cover;
+
+    &__title {
+        position: absolute;
+        left: calc(50% - 278.5px - 0.5px);
+        top: calc(50% - 80.5px - 48.86px);
+
+        h1 {
+            font-family: "Philosopher", sans-serif;
+            font-size: 160px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+}
+
+.no-webp .header {
+    background: url("../img/bg-header.jpg") no-repeat;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        width: 195px;
+        height: 52px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__item {
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $white;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}

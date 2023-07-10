@@ -1,0 +1,8 @@
+#403 Доступ запрещен
+ErrorDocument 403 /403.html
+
+#404 Страница не найдена
+ErrorDocument 404 /404.html
+
+#500 Внутренняя ошибка сервера
+ErrorDocument 500 /500.html

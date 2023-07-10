@@ -1,0 +1,15 @@
+// Добавление шрифта
+@mixin font-face($font-family, $url, $font-weight, $style) {
+    @font-face {
+        src: url("../resources/fonts/#{$url}.woff2") format("woff2"), url("../resources/fonts/#{$url}.woff") format("woff");
+        font-family: "#{$font-family}";
+        font-weight: #{$font-weight};
+        font-style: $style;
+        font-display: swap;
+    }
+}
+
+// Адаптивный шрифт
+@mixin adaptiveFont($minSize, $maxSize, $minLayoutWidth, $maxLayoutWidth) {
+    font-size: calc(#{$minSize + px} + #{$maxSize - $minSize} * (100vw - #{$minLayoutWidth + px}) / #{$maxLayoutWidth - $minLayoutWidth});
+}
